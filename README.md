@@ -14,7 +14,7 @@
 ---
 
 ## 링크
-
+- [https://kimyang-sun.github.io/carrot-game/](https://kimyang-sun.github.io/carrot-game/)
 ---
 
 ## 기능 설명
