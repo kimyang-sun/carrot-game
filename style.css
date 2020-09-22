@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* 폰트 적용 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+html,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* 라이브러리 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.blind,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  font-size: 12px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* 커스텀 */
+:root {
+  --font-size: 2.5em;
+  --border-radius: 10px;
+  --size-basic: 64px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.game-wrap {
+  width: 100%;
+  height: 100vh;
+  background: url(img/background.png) no-repeat center/cover;
+  position: relative;
+}
+
+/* 게임 상단 시작버튼, 시간, 개수 */
+.game-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.game-head .game-btn,
+.game-popup .regame-btn {
+  font-size: var(--font-size);
+  width: var(--size-basic);
+  height: var(--size-basic);
+  background-color: beige;
+  border: 4px solid black;
+  border-radius: var(--border-radius);
+}
+
+.game-head .game-btn:active,
+.game-popup .regame-btn:active {
+  background-color: bisque;
+}
+
+.game-head .game-btn > i,
+.game-popup .regame-btn > i {
+  display: block;
+}
+
+.game-head .timer {
+  font-size: var(--font-size);
+  padding: 0 12px;
+  margin: 10px 0;
+  border: 4px solid black;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
+
+.game-head .count {
+  font-size: var(--font-size);
+  width: var(--size-basic);
+  height: var(--size-basic);
+  text-align: center;
+  color: #fff;
+  background-color: sandybrown;
+  border-radius: 50%;
+}
+
+.game-head > span {
+  visibility: hidden;
+}
+
+.game-head > span.on {
+  visibility: visible;
+}
+
+/* 게임 필드 */
+.game-field {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  width: 100%;
+}
+
+.game-field img {
+  position: absolute;
+  cursor: pointer;
+}
+
+.game-field img:hover {
+  transform: scale(1.1);
+}
+
+/* 게임 팝업 */
+.game-popup {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius);
+  visibility: hidden;
+}
+
+.game-popup.on {
+  visibility: visible;
+}
+
+.game-popup > span {
+  display: block;
+  font-size: var(--font-size);
+  margin-top: 20px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .game-popup {
+    width: 80%;
+  }
+}
