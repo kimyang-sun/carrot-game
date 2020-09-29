@@ -1,8 +1,7 @@
 # Carrot Game! v 1.0
 
 - PC
-![pc](https://user-images.githubusercontent.com/56675004/93880407-6728f000-fd18-11ea-9ef6-f48c20160f7c.JPG)
-
+  ![pc](https://user-images.githubusercontent.com/56675004/93880407-6728f000-fd18-11ea-9ef6-f48c20160f7c.JPG)
 
 - Mobile
 
@@ -19,7 +18,9 @@
 ---
 
 ## 링크
+
 - [https://kimyang-sun.github.io/carrot-game/](https://kimyang-sun.github.io/carrot-game/)
+
 ---
 
 ## 기능 설명
