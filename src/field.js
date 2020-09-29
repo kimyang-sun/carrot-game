@@ -52,7 +52,6 @@ export class Field {
   }
 
   onFieldClick(event) {
-    console.log(this.isGameRunning());
     if (!this.isGameRunning()) {
       return;
     }
